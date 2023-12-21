@@ -1,0 +1,35 @@
+//Function 6
+
+package exe6;
+
+import java.util.Scanner;
+public class Function6 {
+	public static void func6() {
+		Scanner scan = new Scanner(System.in);
+		int [] arr = new int [10];
+		for(int i = 0;i<10;i++)
+		{
+			System.out.print("Type a number: ");
+			arr[i] = scan.nextInt();
+		}
+		for(int k = 1;k<=9;k+=2)
+		{
+			if((arr[k]+arr[k-1])%2==0)
+			{
+				System.out.println(arr[k-1]);
+				System.out.println(arr[k]);
+			}
+		}
+	}
+}
+
+//Tester 6
+
+package exe6;
+
+public class Tester6 {
+	public static void main(String[] args){
+		Function6 fd = new Function6();
+		fd.func6();
+	}
+}
