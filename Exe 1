@@ -1,0 +1,28 @@
+//Function  1
+
+package exe1;
+
+public class Function1 {
+	public static void func()
+	{
+		int [] arr = {3,4,9,12,321};
+		for(int i = 0;i<5;i++)
+		{
+	      if(arr[i]%2!=0)
+	      {
+	        arr[i] += 1;
+	      }
+	      System.out.print(arr[i]+"|");
+	    }
+	}
+}
+
+//Tester 1
+
+package exe1;
+public class Tester1 {
+	public static void main(String[] args) {
+	    Function1 fd = new Function1();
+	    fd.func();
+	}
+}
