@@ -1,0 +1,35 @@
+//Function 3
+
+package exe3;
+
+import java.util.Scanner;
+public class Function3 {
+	public void func3()
+	{
+		Scanner Scan = new Scanner(System.in);
+		int [] arr = new int[5];
+		System.out.print("Type a number: ");
+		int num = Scan.nextInt();
+		for(int i = 1;i<5;i++)
+		{
+			System.out.print("Type another number: ");
+			arr[i] = Scan.nextInt();
+			if(num > arr[i])
+			{
+				num = arr[i];
+			}
+		}
+		System.out.print(num);	
+	}
+}
+
+//Tester 3
+
+package exe3;
+
+public class Tester3 {
+	public static void main(String[] args) {
+		Function3 fd = new Function3();
+		fd.func3();
+	}
+}
