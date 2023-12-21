@@ -1,1 +1,35 @@
+//Function 4
 
+package exe4;
+
+import java.util.Scanner;
+public class Function4 {
+	public static void func4() {
+		Scanner scan = new Scanner(System.in);
+		int [] arr = new int [10];
+		for(int i = 0;i<10;i++)
+		{
+			System.out.print("Type a number: ");
+			arr [i] = scan.nextInt();
+		}
+		for(int k = 1;k<=9;k+=2)
+		{
+			if((arr[k]+arr[k-1])%2!=0)
+			{
+				System.out.println(arr[k-1]);
+				System.out.println(arr[k]);
+			}
+		}
+	}
+}
+
+//Tester4
+
+package exe4;
+
+public class Tester4 {
+	public static void main(String[] args) {
+		Function4 fd = new Function4();
+		fd.func4();
+	}
+}
